@@ -1,0 +1,29 @@
+.section{
+    padding: 1.5em 6em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+.main{
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .section{
+      padding: 1em 4em;
+    }    
+}
+@media (max-width: 950px) {
+    .section{
+      padding: 1em 3em;
+    }    
+}
+
+@media (max-width: 700px) {
+    .section{
+      padding: 1em 1em;
+    }    
+}

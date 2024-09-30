@@ -1,0 +1,21 @@
+.recipes__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.recipes__container h1{
+    font-size: 32px;
+}
+
+@media (max-width: 600px) {
+    .recipes__container h1{
+        font-size: 28px;
+    }
+}
+@media (max-width: 420px) {
+    .recipes__container h1{
+        font-size: 24px;
+    }
+}

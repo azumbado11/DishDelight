@@ -1,0 +1,15 @@
+.profile__container{
+    display: flex;
+}
+
+.outlet__container{
+    padding: 1em;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+ .profile__container{
+    flex-direction: column;
+ }    
+}
+

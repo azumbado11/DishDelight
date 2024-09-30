@@ -1,0 +1,158 @@
+.createform__container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__deco{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 70px;
+    width: 100%;
+}
+
+.header_color_deco{
+    background: var(--shade-primary);
+    height: 50%;
+}
+
+.header_white_deco{
+    height: 50%;
+}
+
+.icon__container{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 9999px;
+    border: 2px solid var(--background-color);
+    top: 25%;
+    left: 50%;
+    background: var(--secondary-color);
+    color: var(--background-color);
+    display: grid;
+    place-content: center;
+}
+
+.icon__container svg{
+    margin-bottom: 1px;
+}
+
+.form_inputs__container{
+    margin-top: 1.25em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+}
+
+.forminput__wrapper{
+    display: flex;
+    width: 100%;
+    gap: 7em;
+    justify-content: space-between;
+}
+
+.forminput__wrapper select{
+    width: 100%;
+    height: 40px;
+    background: var(--shade-color);
+    border-bottom: 2px solid var(--secondary-color);
+    letter-spacing: .35px; 
+    color: var(--grey-text-color);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 14px;
+}
+
+.label{
+    width: 100%;
+    height: fit-content;
+}
+
+.list_div_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.list_div_wrapper_title{
+    border-bottom: 2px solid var(--shade-primary);
+    padding-bottom: 4px;
+}
+
+.list_label{
+    width: 85.95%;
+    display: flex;
+    gap: 2em;
+}
+
+.list_label_single{
+    width: 85.95%;
+    
+}
+
+.list_double_label{
+    width: 100%;
+}
+
+.list_inputs_wrappper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+    width: 100%;
+}
+
+.input_controls__wrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.list__btn{
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    background: var(--secondary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+    cursor: pointer;
+    transition: .2s;
+    &:hover{
+        background: var(--primary-color);
+    }
+}
+
+.block{
+    height: 40px;
+}
+
+@media (max-width: 900px) {
+    .forminput__wrapper{
+        gap: 4em;
+    }    
+}
+@media (max-width: 600px) {
+    .forminput__wrapper{
+        gap: 2em;
+    }
+    .list_label{
+        flex-direction: column;
+        gap: 1.25em;
+        width: 75%;
+    }  
+    .list_inputs_wrappper{
+        align-items: flex-end;
+    }  
+}

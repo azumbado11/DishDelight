@@ -1,0 +1,13 @@
+.skeleton__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.loader_card__container{
+    background: var(--shade-primary);
+    width: 265px;
+    height: 295px;
+}

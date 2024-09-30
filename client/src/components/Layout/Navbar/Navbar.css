@@ -1,0 +1,136 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: .25em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header__logo span{
+    font-size: 26px;
+}
+
+.header-nav__container{
+    display: flex;
+    gap: 3em;
+    height: 2em;
+}
+
+.header-links__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+
+.header-links__container li{
+    list-style: none;
+}
+
+.header-links__container li > a {
+    text-decoration: none;
+    color: var(--text-color);
+    &:hover{
+        color: var(--primary-color);
+    }
+}
+
+.header-links__container li > a.active{
+    color: var(--primary-color);
+}
+
+.header-user-profile{
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 9999px;
+    /* padding: .15em; */
+    cursor: pointer;
+    transition: .2s;
+    &:hover{
+        background: var(--accent-color);
+    }
+}
+
+.header-user-profile svg{
+    margin-top: 4px;
+    color: var(--background-color);
+}
+
+.header-user-menubtn{
+    border: none;
+    background: none;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    display: none;
+    height: 24px;
+}
+
+.toggle-menu__container {
+    width: 100%;
+    max-width: 850px; 
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    overflow: hidden; 
+    transition: max-height 0.2s ease-in, opacity 0.2s ease-in;
+    max-height: 0; 
+    opacity: 0;     
+}
+
+.toggle-menu__container.open {
+    max-height: 500px; 
+    opacity: 1; 
+}
+
+.toggle-menu_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .675em;
+    background: var(--background-color);
+    width: 100%;
+    padding: 1.35em 0; 
+}
+
+.toggle-menu_nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    padding: .55em 0;
+    justify-content: center;
+}
+
+.toggle-menu_nav a:hover {
+    background: var(--shade-primary);
+}
+
+@media (max-width: 850px) {
+    .header_link{
+        display: none;
+    }
+    .header-user-menubtn{
+        display: block;
+    } 
+}
+@media (max-width: 600px) {
+    .header__logo span{
+        font-size: 24px;
+    }
+    .header-links__container{
+        gap: 1.675em;
+    }
+}

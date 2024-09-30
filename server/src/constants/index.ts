@@ -1,0 +1,5 @@
+export const {
+  PORT = 3000,
+  SALT_ROUNDS = 10,
+  SECRET_JWT = 'MY JWT 5UP3R 53CR3T F0R 51N6 1N U553R 535510N5',
+} = process.env;

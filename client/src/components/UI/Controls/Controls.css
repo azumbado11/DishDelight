@@ -1,0 +1,30 @@
+.controls__container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.control-cta-btn{
+    background: none;
+    border: none;
+    width: 34px;
+    height: 34px;
+    &:disabled .icon{
+        color: var(--disable-color);
+        &:hover{
+            color: var(--disable-color);
+        }
+    }
+}
+
+.controls__container .icon{
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: .1s;
+    &:hover{
+        color: var(--accent-color);
+    }
+}
+
